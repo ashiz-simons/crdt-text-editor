@@ -27,7 +27,7 @@ export default function Editor() {
 
   const { ydoc, provider, yXmlFragment } = useMemo(() => {
     const ydoc = new Y.Doc();
-    const provider = new WebsocketProvider("ws://localhost:1234", roomId, ydoc);
+    const provider = new WebsocketProvider("https://crdt-text-editor.onrender.com", roomId, ydoc);
     const yXmlFragment = ydoc.getXmlFragment("prosemirror");
     return { ydoc, provider, yXmlFragment };
   }, [roomId]);
