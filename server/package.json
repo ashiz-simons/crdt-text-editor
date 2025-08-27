@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "y-websocket --port 1234 --host 0.0.0.0"
+    "start": "y-websocket --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "ws": "^8.18.0",
     "y-websocket": "1.4.5",
     "yjs": "^13.6.15"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
+
