@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "y-websocket --port $PORT --host 0.0.0.0"
+    "start": "y-websocket --port ${PORT} --host 0.0.0.0"
   },
   "dependencies": {
     "ws": "^8.18.0",
